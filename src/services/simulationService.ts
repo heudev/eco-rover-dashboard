@@ -3,7 +3,7 @@ import { MotorStatus, MissionStatus, RoverMetrics } from '../types/rover';
 
 class SimulationService {
     private static instance: SimulationService;
-    private interval: NodeJS.Timer | null = null;
+    private interval: NodeJS.Timeout | null = null;
     private missionPhases = [
         'Başlangıç Kontrolleri',
         'Navigasyon Kalibrasyonu',
